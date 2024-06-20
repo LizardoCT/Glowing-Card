@@ -23,13 +23,9 @@ function GlowingCards() {
     }
   }, [])
 
-  // Primero hacer htlm estatico, 3 cards con su contendio
-  // Luego crear el componente Card y mostrar uno solo
-  // Finalmente crear el arraya dataCards y mapearlo mostrando contenido.
-
   return (
-    <div className='container'>
-      <div className='cards'>
+    <div className='cards_section'>
+      <div className='cards_container'>
         {dataCards.map((card, index) => (
           <Card
             key={card.id}
