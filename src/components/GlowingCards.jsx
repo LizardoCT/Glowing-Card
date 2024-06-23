@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
-import './glowingCards.css'
-import Card from './SingleCard'
 import { dataCards } from './dataCards'
+import Card from './SingleCard'
+import './glowingCards.css'
 
 function GlowingCards() {
   const cardsRef = useRef([])
@@ -33,6 +33,7 @@ function GlowingCards() {
             icon={card.icon}
             title={card.title}
             text={card.text}
+            link={card.link}
           />
         ))}
       </div>
